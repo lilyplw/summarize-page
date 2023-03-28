@@ -6,19 +6,14 @@ import styled from "@emotion/styled";
 const MainPage = () => {
 	const { data, setData } = useContext(DataContext);
 	const categories = data.map((item) => item.category);
-	const uniqueCategories = new Set(categories);
-
-	console.log(uniqueCategories);
-
-	// const result = data.filter((item) => {
-	// 	return item.category === "ストール";
-	// });
-
-	console.log(uniqueCategories);
+	const setArr = new Set(categories);
+	const uniqueCategories = Array.from(setArr);
 
 	return (
 		<MainPageComponent>
-			<ItemList />
+			{uniqueCategories.map((value) => (
+				<ItemList category={value} key={value} />
+			))}
 		</MainPageComponent>
 	);
 };

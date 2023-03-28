@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 import MainPage from "./components/MainPage";
+import Splide from "./components/splide";
 import "./App.css";
 
 export const DataContext = createContext();
@@ -18,6 +19,7 @@ function App() {
 
 	return (
 		<DataContext.Provider value={value}>
+			<Splide />
 			<MainPage />
 		</DataContext.Provider>
 	);

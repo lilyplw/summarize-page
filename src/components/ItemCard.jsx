@@ -6,7 +6,7 @@ const ItemCard = (props) => {
 		<ItemCardComponent>
 			<a href={props.link}>
 				<img src={props.image} alt={props.code} />
-				<h3>{props.price}</h3>
+				<h3>¥ {props.price.toLocaleString()}</h3>
 			</a>
 		</ItemCardComponent>
 	);
