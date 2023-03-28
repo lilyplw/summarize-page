@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 import MainPage from "./components/MainPage";
-import Splide from "./components/splide";
+import Splide from "./components/SplideComponent";
 import "./App.css";
 
 export const DataContext = createContext();
