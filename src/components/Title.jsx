@@ -6,7 +6,7 @@ const Title = () => {
 			<h1>
 				<span>大切な</span>
 				<span>お母さんに</span>
-				<span>送るギフト</span>
+				<span>贈るギフト</span>
 			</h1>
 		</div>
 	);
